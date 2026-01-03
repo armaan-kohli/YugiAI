@@ -31,8 +31,6 @@ def download_all_cards():
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")
 
-def clean_all_cards()
 
 if __name__ == "__main__":
     download_all_cards()
-    clean_all_cards()

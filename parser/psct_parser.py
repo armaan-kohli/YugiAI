@@ -1,26 +1,21 @@
 import re
 
 def parse_single_effect(text: str):
-    """
-    Parses a single effect string into Condition, Cost, and Effect.
-    """
-    # 1. Check for Condition (ends with :)
     condition = ""
-    if ":" in text:
-        condition, text = text.split(":", 1)
-
-    # 2. Check for Cost/Activation (ends with ;)
     cost_action = ""
-    if ";" in text:
-        cost_action, text = text.split(";", 1)
-
-    # 3. The remainder is the Effect
     effect = text.strip()
+
+    # PSCT Order: [Condition]: [Cost/Targeting]; [Effect]
+    if ":" in effect:
+        condition, effect = effect.split(":", 1)
+    
+    if ";" in effect:
+        cost_action, effect = effect.split(";", 1)
 
     return {
         "condition": condition.strip(),
         "cost_action": cost_action.strip(),
-        "effect": effect
+        "effect": effect.strip()
     }
 
 def split_effects(text: str):

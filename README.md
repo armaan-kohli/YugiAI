@@ -22,7 +22,7 @@ A specialized AI Judge designed to help determine and resolve complex Yu-Gi-Oh! 
 | **LLM** | Google Gemini (`gemini-3-pro-preview`) |
 | **Vector Database** | ChromaDB (Persistent Client) |
 | **PDF Extraction** | PyMuPDF (`fitz`) |
-| **Data Processing** | Python, `concurrent.futures`, `re`, `json` |
+| **Data Processing** | Python |
 | **External API** | YGOPRODeck API |
 
 ---

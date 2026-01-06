@@ -88,4 +88,4 @@ class YugiJudge:
 
 if __name__ == "__main__":
     judge = YugiJudge()
-    print(judge.answer_query("Can I use Ash Blossom if my opponent activates the destruction effect of Sacred Fire King Garunix?"))
+    print(judge.answer_query("If I activate Forbidden Crown on a Exosister monster summoned from Exosister Vadis, does it return to the deck at the end of the turn?"))
